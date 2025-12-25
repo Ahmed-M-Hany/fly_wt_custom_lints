@@ -22,29 +22,23 @@ lints:
 1- avoid AppColors & AppTypography. use themes instead.
 
 ## Getting started
-
-first step: add this package as a sibling (not a child) to the fly_wt project directory.
+first step: add this to pubspec.yaml under dev_dependencies
 <pre>
-
- |
- |__FlyWt_b2c_Mobile/
- |      assets/
- |      lib/
- |      pubspec.yaml/
- |      ...etc
- |
- |__fly_wt_custom_lints/
- |      lib/
- |       pubspec.yaml
- |       ...etc
- </pre>
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
 
 
-second step: add this package and (customlint: ^0.6.0) to your project's pubspec.yaml file in as follows:
+  flutter_lints: ^6.0.0
+  custom_lint: ^0.6.0
+  fly_wt_custom_lints:
+    git:
+      url: https://github.com/Ahmed-M-Hany/fly_wt_custom_lints
+      ref: main
 
-<img width="636" height="268" alt="image" src="https://github.com/user-attachments/assets/8e1d5694-ccd0-4447-bf49-101037275d3f" />
+</pre>
 
-third step:
+second step:
 just run : 
 <pre>
 flutter pub get 
