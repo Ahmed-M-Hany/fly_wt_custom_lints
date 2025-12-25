@@ -18,6 +18,7 @@ note: this package depends on custom_lints: ^0.6.0
 ## Features
 
 lints:
+
 1- avoid AppColors & AppTypography. use themes instead.
 
 ## Getting started
