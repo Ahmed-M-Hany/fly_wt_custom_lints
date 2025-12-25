@@ -11,29 +11,39 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/to/develop-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+custom lints for the fly wt team.
+note: this package depends on custom_lints: ^0.6.0
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+lints:
+1- avoid AppColors & AppTypography. use themes instead.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+first step: add this package as a sibling (not a child) to the fly_wt project directory.
+|
+|__FlyWt_b2c_Mobile/
+|      assets/
+|      lib/
+|      pubspec.yaml/
+|      ...etc
+|
+|__fly_wt_custom_lints/
+|      lib/
+|       pubspec.yaml
+|       ...etc
+
+second step: add this package and (customlint: ^0.6.0) to your project's pubspec.yaml file in as follows:
+
+<img width="636" height="268" alt="image" src="https://github.com/user-attachments/assets/8e1d5694-ccd0-4447-bf49-101037275d3f" />
+
+third step:
+just run : flutter pub get 
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+you should see results in your dart analysis tab in Android Studio or the problems tab in VS Code
 
-```dart
-const like = 'sample';
-```
 
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+feel free to contact me whenever there is an issue
